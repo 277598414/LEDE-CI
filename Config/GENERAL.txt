@@ -2,6 +2,32 @@
 # CONFIG_PACKAGE_luci-app-homeproxy=y
 # CONFIG_PACKAGE_luci-app-nikki=y
 # CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-ssr-plus=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY is not set
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray is not set
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS_RUST=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNSPROXY=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_MosDNS=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Tuic_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadow_TLS=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
 #增加插件
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_TURBOACC_INCLUDE_NO_FASTPATH=y
@@ -29,9 +55,6 @@ CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_PER_DEVICE_ROOTFS=y
 # CONFIG_TARGET_ROOTFS_INITRAMFS is not set
 #内核调整
-CONFIG_DEVEL=y
-CONFIG_TARGET_PER_DEVICE_ROOTFS=y
-CONFIG_CCACHE=y
 CONFIG_PACKAGE_automount=m
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_blkid=y
@@ -65,7 +88,6 @@ CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_usb-modeswitch=y
 CONFIG_PARTED_READLINE=y
 CONFIG_RUBY_ENABLE_YJIT=y
-# CONFIG_TARGET_ROOTFS_INITRAMFS is not set
 CONFIG_PACKAGE_kmod-crypto-crc32c=y
 CONFIG_PACKAGE_kmod-fs-exfat=y
 CONFIG_PACKAGE_kmod-fs-ext4=y
@@ -80,35 +102,3 @@ CONFIG_PACKAGE_kmod-scsi-core=y
 CONFIG_PACKAGE_kmod-usb-storage=y
 CONFIG_PACKAGE_kmod-usb-storage-extras=y
 CONFIG_PACKAGE_kmod-usb-storage-uas=y
-CONFIG_PACKAGE_luci-app-ssr-plus=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Server=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY is not set
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray is not set
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS_RUST=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNSPROXY=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_MosDNS=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Tuic_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadow_TLS=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
-CONFIG_PACKAGE_luci-app-turboacc=y
-CONFIG_PACKAGE_TURBOACC_INCLUDE_NO_FASTPATH=y
-CONFIG_PACKAGE_TURBOACC_INCLUDE_FLOW_OFFLOADING=y
-CONFIG_PACKAGE_TURBOACC_INCLUDE_FAST_CLASSIFIER=y
-CONFIG_PACKAGE_TURBOACC_INCLUDE_SHORTCUT_FE_CM=y
-CONFIG_PACKAGE_TURBOACC_INCLUDE_BBR_CCA=y
