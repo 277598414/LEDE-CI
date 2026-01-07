@@ -22,7 +22,7 @@ on:
           - IPQ807X-WIFI-NO
           - TEST
       SOURCE:
-        default: 'LiBwrt/openwrt-6.x'
+        default: 'coolsnowwolf/lede'
         required: true
         type: choice
         options:
@@ -31,7 +31,7 @@ on:
           - LiBwrt/openwrt-6.x
           - qosmio/openwrt-ipq
       BRANCH:
-        default: 'main-nss'
+        default: 'master'
         required: true
         type: string
       PACKAGE:
@@ -58,9 +58,9 @@ jobs:
       #默认主题
       WRT_THEME: bootstrap
       #默认主机名
-      WRT_NAME: LiBwrt
+      WRT_NAME: LEDE
       #默认WIFI名称
-      WRT_SSID: LiBwrt
+      WRT_SSID: LEDE
       #默认WIFI密码
       WRT_WORD: 12345678
       #默认地址
