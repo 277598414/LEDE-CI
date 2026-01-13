@@ -27,7 +27,6 @@ CONFIG_PACKAGE_luci-app-cpufreq=m
 CONFIG_PACKAGE_luci-app-ddns=m
 CONFIG_PACKAGE_luci-app-filetransfer=m
 CONFIG_PACKAGE_luci-app-nlbwmon=m
-CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-ksmbd=m
 CONFIG_PACKAGE_luci-app-upnp=m
 CONFIG_PACKAGE_luci-app-vlmcsd=m
